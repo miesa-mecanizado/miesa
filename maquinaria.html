@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIESA - Capacidad Instalada y Maquinaria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            miesa: {
+              navy: '#0d3159',      /* Azul corporativo MIESA */
+              steel: '#1e293b',
+              blue: '#2563eb',
+              lightBg: '#e2e8f0',   /* Fondo claro del logo */
+              light: '#f8fafc',
+              border: '#cbd5e1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .logo-badge {
+      border: 3px solid #0d3159;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background-color: #e2e8f0;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-miesa-light text-slate-800 font-sans antialiased">
+
+  <!-- ENCABEZADO SUPERIOR -->
+  <header class="bg-miesa-navy text-white py-3 px-4 shadow-md sticky top-0 z-50 border-b border-slate-700">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
+      <div class="flex items-center gap-3">
+        <div class="logo-badge shadow-inner">
+          <span class="text-xl md:text-2xl font-extrabold italic tracking-wider text-miesa-navy leading-none font-sans">MIESA</span>
+          <span class="text-[9px] font-semibold italic text-miesa-navy tracking-tight leading-tight">your machining partner</span>
+        </div>
+        <div class="hidden sm:block border-l border-slate-600 pl-3">
+          <h1 class="text-sm font-bold text-slate-100 uppercase tracking-wide">Maquinados Industriales Esféricos</h1>
+          <p class="text-[10px] text-slate-300">Infraestructura y Capacidad Instalada</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/522224335744?text=Hola,%20quisiera%20consultar%20la%20capacidad%20de%20su%20maquinaria" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-3.5 py-2 rounded shadow transition flex items-center gap-1.5">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Cotizar WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- BANNER TITULAR -->
+  <section class="bg-miesa-navy text-white py-10 px-4 text-center border-b border-miesa-steel">
+    <div class="max-w-3xl mx-auto space-y-2">
+      <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Tecnología CNC & Equipamiento Convencional
+      </span>
+      <h2 class="text-2xl md:text-4xl font-extrabold text-white">
+        Nuestra Maquinaria y Taller
+      </h2>
+      <p class="text-slate-300 text-xs md:text-sm font-light leading-relaxed">
+        Contamos con un parque de maquinaria versátil que combina control numérico computarizado (CNC) para lotes y piezas complejas, con máquinas convencionales para trabajos de reparación y desarrollo rápido.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE EQUIPO PRINCIPAL -->
+  <main class="max-w-5xl mx-auto my-10 px-4 space-y-12">
+
+    <!-- SECCIÓN DE FOTOS DESTACADAS DEL TALLER -->
+    <section class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border space-y-6">
+      <div class="border-b border-miesa-border pb-3">
+        <h3 class="text-lg font-bold text-miesa-navy uppercase tracking-wide flex items-center gap-2">
+          <i class="fa-solid fa-gears text-blue-600"></i> Galería de Instalaciones y Equipamiento
+        </h3>
+        <p class="text-xs text-slate-500">Vista general de nuestras máquinas de torneado, fresado y estaciones de manufactura en planta.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        
+        <!-- FOTO 1 -->
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-56 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1m73jWTVJKyso8fFmnolyV_DoSOrbM1kY" alt="Maquinaria MIESA" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-3">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Área de Torneado</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Tornos Industriales de Precisión</h4>
+          </div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-56 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/108DhRnJgbB60u1U9nRlogDWgNyewVTH3" alt="Centro de Maquinado MIESA" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-3">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Mecanizado CNC</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Centros de Maquinado y Fresadoras</h4>
+          </div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-56 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1e4IwbffjROny-aA9HSjVkLVAXkje6--c" alt="Maquinaria MIESA" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-3">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Fresado e Instrumental</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Centros de Maquinado y Fresadoras</h4>
+          </div>
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-56 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1XPvRBrfxwNBbbr9aHKz6WM6RExfbVphe" alt="Maquinaria MIESA" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-3">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Área de Manufactura</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Equipamiento de Taller y Ajuste</h4>
+          </div>
+        </div>
+
+        <!-- FOTO 5 (FRESADORA CNC RECOR TADA LATERALMENTE) -->
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-56 bg-slate-100 overflow-hidden flex items-center justify-center relative">
+            <img src="https://lh3.googleusercontent.com/d/1yc9i9YgyG6mPZbMS62_kcwsLMJR9Ycw_" alt="Fresadora CNC MIESA" class="w-[135%] max-w-none h-full object-cover object-center hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-3">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Mecanizado CNC</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Fresadora CNC</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESUMEN TÉCNICO DE CAPACIDAD INSTALADA -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- TORNEADO -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border space-y-4">
+        <div class="flex items-center gap-3 border-b border-miesa-border pb-3">
+          <div class="bg-miesa-lightBg text-miesa-navy p-2.5 rounded-lg text-lg">
+            <i class="fa-solid fa-circle-notch"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-miesa-navy text-sm uppercase">Capacidad de Torneado</h4>
+            <p class="text-[11px] text-slate-500">CNC y Tornos Convencionales</p>
+          </div>
+        </div>
+        <ul class="text-xs space-y-2 text-slate-700">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Torno CNC Hitachi:</strong> Chuck de 10" y 750 mm de distancia entre puntos.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Tornos CNC Leadwell (2 unidades):</strong> Chuck de 6" y 500 mm entre puntos.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Tornos Convencionales Paralelos (2 unidades):</strong> 2000 mm entre puntos y volteo de 500 mm.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- FRESADO, CENTROS CNC Y PERFORACIÓN -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border space-y-4">
+        <div class="flex items-center gap-3 border-b border-miesa-border pb-3">
+          <div class="bg-miesa-lightBg text-miesa-navy p-2.5 rounded-lg text-lg">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-miesa-navy text-sm uppercase">Fresado, VMC y Barrenado</h4>
+            <p class="text-[11px] text-slate-500">Centros Verticales, Fresadoras y Perforación</p>
+          </div>
+        </div>
+        <ul class="text-xs space-y-2 text-slate-700">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Centro de Maquinado Bridgeport (VMC):</strong> Mesa de trabajo de 1000 x 500 mm.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Centro de Maquinado Microcut (VMC):</strong> Mesa de trabajo de 760 x 360 mm.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Fresadoras CNC (2 unidades):</strong> Mesas de 1000 x 330 mm.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Fresadoras Universales (No. 2 y No. 3):</strong> Apoyo para piezas pesadas y operaciones adicionales.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-check text-blue-600 mt-0.5"></i>
+            <span><strong>Taladros de Columna:</strong> Para operaciones auxiliares de perforado, avellanado y machueleado.</span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- LLAMADO A LA ACCIÓN -->
+  <section class="bg-miesa-navy text-white py-8 px-4 text-center border-t border-slate-700">
+    <div class="max-w-3xl mx-auto space-y-3">
+      <h3 class="text-base md:text-lg font-bold">¿Necesitas evaluar la factibilidad de tu proyecto en nuestro equipo?</h3>
+      <p class="text-xs text-slate-300">Envíanos las dimensiones o planos de tu pieza y te confirmamos en qué máquina podemos procesarla.</p>
+      <a href="https://wa.me/522224335744?text=Hola,%20quisiera%20consultar%20la%20capacidad%20de%20su%20maquinaria" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow transition">
+        <i class="fa-brands fa-whatsapp text-sm mr-1"></i> Consultar por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
