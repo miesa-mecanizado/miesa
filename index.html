@@ -67,7 +67,7 @@
   </header>
 
 
-  <!-- BANNER DINÁMICO (CAMBIA CADA 6 SEGUNDOS) -->
+  <!-- BANNER DINÁMICO (CAMBIA CADA 7 SEGUNDOS) -->
   <section class="relative bg-miesa-navy text-white overflow-hidden min-h-[320px] flex items-center justify-center">
     
     <!-- Diapositiva 1: Producción CNC -->
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-<!-- Indicadores de puntos (Dots) con clic habilitado -->
+    <!-- Indicadores de puntos (Dots) con clic habilitado -->
     <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
       <span class="dot w-2.5 h-2.5 bg-white/80 rounded-full transition-all cursor-pointer hover:scale-125" onclick="goToSlide(0)"></span>
       <span class="dot w-2.5 h-2.5 bg-white/30 rounded-full transition-all cursor-pointer hover:scale-125" onclick="goToSlide(1)"></span>
@@ -117,18 +117,16 @@
     </div>
   </section>
 
-  <!-- NAVEGACIÓN RÁPIDA DE SECCIONES (NUEVOS BOTONES) -->
-
-    <!-- Ejemplo de menú navegable -->
-<nav class="flex justify-center items-center gap-6 py-2.5 bg-white border-b border-miesa-border text-xs font-semibold text-slate-700 shadow-sm">
-  <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
-  <a href="nosotros.html" class="hover:text-blue-600 transition">Nosotros</a>
-  <a href="contacto.html" class="hover:text-blue-600 transition">Contacto</a>
-  <a href="maquinaria.html" class="hover:text-blue-600 transition">Maquinaria</a>
-  <a href="trabajos.html" class="hover:text-blue-600 transition">Trabajos</a>
-</nav>
+  <!-- NAVEGACIÓN RÁPIDA DE SECCIONES -->
+  <nav class="flex justify-center items-center gap-6 py-2.5 bg-white border-b border-miesa-border text-xs font-semibold text-slate-700 shadow-sm">
+    <a href="index.html" class="hover:text-blue-600 transition">Inicio</a>
+    <a href="nosotros.html" class="hover:text-blue-600 transition">Nosotros</a>
+    <a href="contacto.html" class="hover:text-blue-600 transition">Contacto</a>
+    <a href="maquinaria.html" class="hover:text-blue-600 transition">Maquinaria</a>
+    <a href="trabajos.html" class="hover:text-blue-600 transition">Trabajos</a>
+  </nav>
   
- <!-- NAV SECCIONES (TARJETAS) -->
+  <!-- NAV SECCIONES (TARJETAS) -->
   <section class="bg-miesa-steel py-6 px-4 border-b border-miesa-border">
     <div class="max-w-4xl mx-auto text-center">
       <p class="text-slate-300 text-xs uppercase tracking-wider mb-4 font-semibold">Explora las secciones de MIESA:</p>
@@ -172,11 +170,12 @@
     </div>
   </section>
 
-  <!-- Script con cambio a 6 SEGUNDOS (6000 ms) -->
+  <!-- Script con interacción por clic e intervalo reiniciable -->
   <script>
     let currentSlide = 0;
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
+    let slideInterval;
 
     function showSlide(index) {
       slides.forEach((slide, i) => {
@@ -185,12 +184,27 @@
       });
       slides[index].classList.add('active');
       dots[index].classList.replace('bg-white/30', 'bg-white/80');
+      currentSlide = index;
     }
 
-    setInterval(() => {
+    // Cambia de diapositiva al hacer clic y reinicia el temporizador de 7s
+    function goToSlide(index) {
+      showSlide(index);
+      resetTimer();
+    }
+
+    function nextSlide() {
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
-    }, 7000); // 7000 milisegundos = 7 segundos
+    }
+
+    function resetTimer() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(nextSlide, 7000);
+    }
+
+    // Iniciar el temporizador
+    slideInterval = setInterval(nextSlide, 7000);
   </script>
 
 </body>
