@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIESA - Maquinados Industriales Esféricos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            miesa: {
+              navy: '#0d3159',      /* Azul corporativo MIESA */
+              steel: '#1e293b',
+              blue: '#2563eb',
+              lightBg: '#e2e8f0',   /* Fondo claro del logo */
+              light: '#f8fafc',
+              border: '#cbd5e1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .slide {
+      display: none;
+      transition: opacity 0.6s ease-in-out;
+    }
+    .slide.active {
+      display: block;
+    }
+    .logo-badge {
+      border: 3px solid #0d3159;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background-color: #e2e8f0;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-miesa-light text-slate-800 font-sans antialiased">
+
+  <!-- ENCABEZADO CON LOGO MIESA -->
+  <header class="bg-miesa-navy text-white py-3 px-4 shadow-md sticky top-0 z-50 border-b border-slate-700">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
+      
+      <!-- Insignia del Logo MIESA -->
+      <div class="flex items-center gap-3">
+        <div class="logo-badge shadow-inner">
+          <span class="text-xl md:text-2xl font-extrabold italic tracking-wider text-miesa-navy leading-none font-sans">MIESA</span>
+          <span class="text-[9px] font-semibold italic text-miesa-navy tracking-tight leading-tight">your machining partner</span>
+        </div>
+        <div class="hidden sm:block border-l border-slate-600 pl-3">
+          <h1 class="text-sm font-bold text-slate-100 uppercase tracking-wide">Maquinados Industriales Esféricos</h1>
+          <p class="text-[10px] text-slate-300">Manufactura de Precisión & Producción CNC</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/522224335744?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-3.5 py-2 rounded shadow transition flex items-center gap-1.5">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Cotizar WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- BANNER DINÁMICO (CAMBIA CADA 6 SEGUNDOS) -->
+  <section class="relative bg-miesa-navy text-white overflow-hidden min-h-[320px] flex items-center justify-center">
+    
+    <!-- Diapositiva 1: Producción CNC -->
+    <div class="slide active w-full py-10 px-4 text-center bg-gradient-to-r from-slate-900 via-miesa-navy to-slate-900">
+      <div class="max-w-4xl mx-auto space-y-3">
+        <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Maquinados Industriales Esféricos</p>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+          Producción CNC en Serie
+        </h2>
+        <p class="text-slate-300 text-xs md:text-sm max-w-xl mx-auto font-light leading-relaxed">
+          Manufactura de alta precisión para lotes industriales medianos y grandes con estricto control dimensional y tolerancia centesimal.
+        </p>
+      </div>
+    </div>
+
+    <!-- Diapositiva 2: Programación CNC & CAD/CAM -->
+    <div class="slide w-full py-10 px-4 text-center bg-gradient-to-r from-slate-900 via-miesa-steel to-slate-900">
+      <div class="max-w-4xl mx-auto space-y-3">
+        <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Maquinados Industriales Esféricos</p>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+          Programación CNC y CAD/CAM
+        </h2>
+        <p class="text-slate-300 text-xs md:text-sm max-w-xl mx-auto font-light leading-relaxed">
+          Optimización de estrategias de corte en SolidWorks para reducir tiempos de ciclo, minimizar costos y garantizar piezas complejas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Diapositiva 3: Transparencia Comercial -->
+    <div class="slide w-full py-10 px-4 text-center bg-gradient-to-r from-blue-950 via-miesa-navy to-slate-900">
+      <div class="max-w-4xl mx-auto space-y-3">
+        <p class="text-blue-300 text-xs font-bold uppercase tracking-widest">Maquinados Industriales Esféricos</p>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-white tracking-tight">
+          Transparencia Comercial
+        </h2>
+        <p class="text-slate-300 text-xs md:text-sm max-w-xl mx-auto font-light leading-relaxed">
+          Relaciones de confianza con departamentos de mantenimiento y compras. Cumplimiento puntual de tiempos de entrega y trazabilidad.
+        </p>
+      </div>
+    </div>
+
+    <!-- Indicadores de puntos (Dots) -->
+    <div class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10">
+      <span class="dot w-2.5 h-2.5 bg-white/80 rounded-full transition-all"></span>
+      <span class="dot w-2.5 h-2.5 bg-white/30 rounded-full transition-all"></span>
+      <span class="dot w-2.5 h-2.5 bg-white/30 rounded-full transition-all"></span>
+    </div>
+  </section>
+
+  <!-- NAVEGACIÓN RÁPIDA DE SECCIONES (NUEVOS BOTONES) -->
+  <section class="bg-miesa-steel py-6 px-4 border-b border-miesa-border">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-slate-300 text-xs uppercase tracking-wider mb-4 font-semibold">Explora las secciones de MIESA:</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+        
+        <a href="#trabajos" class="bg-slate-800 hover:bg-miesa-blue text-white p-3 rounded-lg border border-slate-700 transition flex flex-col items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-images text-base text-blue-400"></i>
+          <span class="font-bold">Portafolio de Trabajos</span>
+        </a>
+
+        <a href="#maquinaria" class="bg-slate-800 hover:bg-miesa-blue text-white p-3 rounded-lg border border-slate-700 transition flex flex-col items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-industry text-base text-blue-400"></i>
+          <span class="font-bold">Equipamiento y Taller</span>
+        </a>
+
+        <a href="#mision-vision" class="bg-slate-800 hover:bg-miesa-blue text-white p-3 rounded-lg border border-slate-700 transition flex flex-col items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-bullseye text-base text-blue-400"></i>
+          <span class="font-bold">Misión y Visión</span>
+        </a>
+
+        <a href="#contacto" class="bg-slate-800 hover:bg-miesa-blue text-white p-3 rounded-lg border border-slate-700 transition flex flex-col items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-location-dot text-base text-blue-400"></i>
+          <span class="font-bold">Ubicación y Contacto</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES Y PROYECTOS VALIDADOS -->
+  <section class="max-w-4xl mx-auto my-8 px-4 text-center">
+    <p class="text-[11px] text-slate-500 uppercase tracking-widest mb-3 font-semibold">
+      Capacidad técnica y precisión validadas en proyectos para:
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-2 text-miesa-navy text-xs font-extrabold">
+      <span class="bg-miesa-lightBg px-3.5 py-1.5 rounded border border-miesa-border shadow-sm">INAOE</span>
+      <span class="bg-miesa-lightBg px-3.5 py-1.5 rounded border border-miesa-border shadow-sm">GTM (Gran Telescopio Milimétrico)</span>
+      <span class="bg-miesa-lightBg px-3.5 py-1.5 rounded border border-miesa-border shadow-sm">SKF</span>
+      <span class="bg-miesa-lightBg px-3.5 py-1.5 rounded border border-miesa-border shadow-sm">FFT</span>
+      <span class="bg-miesa-lightBg px-3.5 py-1.5 rounded border border-miesa-border shadow-sm">SELESPO</span>
+    </div>
+  </section>
+
+  <!-- Script con cambio a 6 SEGUNDOS (6000 ms) -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.replace('bg-white/80', 'bg-white/30');
+      });
+      slides[index].classList.add('active');
+      dots[index].classList.replace('bg-white/30', 'bg-white/80');
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 7000); // 7000 milisegundos = 7 segundos
+  </script>
+
+</body>
+</html>
