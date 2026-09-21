@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIESA - Portafolio por Sectores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            miesa: {
+              navy: '#0d3159',      /* Azul corporativo MIESA */
+              steel: '#1e293b',
+              blue: '#2563eb',
+              lightBg: '#e2e8f0',   /* Fondo claro del logo */
+              light: '#f8fafc',
+              border: '#cbd5e1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .logo-badge {
+      border: 3px solid #0d3159;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background-color: #e2e8f0;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-miesa-light text-slate-800 font-sans antialiased">
+
+  <!-- ENCABEZADO SUPERIOR -->
+  <header class="bg-miesa-navy text-white py-3 px-4 shadow-md sticky top-0 z-50 border-b border-slate-700">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
+      <div class="flex items-center gap-3">
+        <div class="logo-badge shadow-inner">
+          <span class="text-xl md:text-2xl font-extrabold italic tracking-wider text-miesa-navy leading-none font-sans">MIESA</span>
+          <span class="text-[9px] font-semibold italic text-miesa-navy tracking-tight leading-tight">your machining partner</span>
+        </div>
+        <div class="hidden sm:block border-l border-slate-600 pl-3">
+          <h1 class="text-sm font-bold text-slate-100 uppercase tracking-wide">Maquinados Industriales Esféricos</h1>
+          <p class="text-[10px] text-slate-300">Portafolio de Proyectos por Sector</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/522224335744?text=Hola,%20quisiera%20cotizar%20un%20proyecto%20de%20maquinado" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-3.5 py-2 rounded shadow transition flex items-center gap-1.5">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Cotizar WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- BANNER TITULAR -->
+  <section class="bg-miesa-navy text-white py-10 px-4 text-center border-b border-miesa-steel">
+    <div class="max-w-3xl mx-auto space-y-2">
+      <span class="bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Casos de Éxito & Manufactura Especializada
+      </span>
+      <h2 class="text-2xl md:text-4xl font-extrabold text-white">
+        Portafolio por Sectores
+      </h2>
+      <p class="text-slate-300 text-xs md:text-sm font-light leading-relaxed">
+        Capacidad técnica, acabados superficiales y precisión dimensional adaptada a las exigencias de cada industria.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL ORGANIZADO POR CATEGORÍAS -->
+  <main class="max-w-5xl mx-auto my-10 px-4 space-y-12">
+
+    <!-- SECTOR 1: INDUSTRIA GENERAL -->
+    <section class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border">
+      <div class="flex items-center gap-3 border-b border-miesa-border pb-4 mb-6">
+        <div class="bg-miesa-lightBg text-miesa-navy p-3 rounded-lg text-xl">
+          <i class="fa-solid fa-industry"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-miesa-navy uppercase tracking-wide">1. Sector Industrial General</h3>
+          <p class="text-xs text-slate-500">Manufactura de chumaceras, elementos de rodamiento y componentes pesados de alta durabilidad.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1OTvpoYkfAEhon8Qkf9VVf5DZBVSGYbkf" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Retrabajos y Accesorios</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1-xvmfl-32jfZZLTKiRpPgK-pT_97J5zM" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Componentes Mecánicos</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1iSFlvUeNEu3vAg36fEQ9TMZvfF0zQhmd" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Ajustes para Rodamientos</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1rjrW9Y6OyHHcRL55wPwjUqdL7_qUmnh4" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Chumaceras Especiales</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1yoy_Q-rMYTRiiBkVEE3d-AJrsay67sWH" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Lotes de Maquilado</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1umEXnQVaP-v7fVUl-zkP39C62reE2M6X" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Piezas Especiales</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/13GK_KrKp2HBMAmAxvZi8-ldlxHQcdA-Y" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Fabricación a Medida</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1to0FTyjDGKAPgoWVMXRRfCN0is348KsI" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Ensamble Mecánico</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1XcgGPk0vEpeXvrJgJT8aES9XpILAIzSf" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Piezas de Repuesto</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1AoFx09e813_kham_Aju-E2nJbOy_K_8k" alt="Maquinado Industrial General" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-blue-600 uppercase">Industria General</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Precision en Torneado</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTOR 2: CIENTÍFICO Y TECNOLÓGICO -->
+    <section class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border">
+      <div class="flex items-center gap-3 border-b border-miesa-border pb-4 mb-6">
+        <div class="bg-miesa-lightBg text-miesa-navy p-3 rounded-lg text-xl">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-miesa-navy uppercase tracking-wide">2. Sector Científico y Tecnológico</h3>
+          <p class="text-xs text-slate-500">Desarrollo de piezas complejas, soportes ópticos y estructuras para investigación técnica.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1A9KKZwPgmVYiNNbhcqAzZc7lzrXKVlCc" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Soportes de Alta Precisión</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1kgdk2pFaz8qrwD2hsnQF9fADrAY2wv7i" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Placas e Instrumentación</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1GtuFfvUh3rKaRbvr0R0LvVM5--U2A1LG" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Ajustes Micrométricos</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1Wk7XXeZg6F13B3-S1tLvlePoV2PeHPXM" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Mecanismos Especiales</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1dobyBTUW1-PSIKfM7lCzf3THsB7VF3M3" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Estructuras para Laboratorio</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1spVdDFtE6Bqz1UUw_URbCM7VsnB1HRwB" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Aleaciones de Aluminio / Inox</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1wmwa_FVGQgwjFWcoPVWBCsl2pfWHwtJr" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Montajes Ópticos</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1OlNxemCuX39MtHWGt5jI6mZ1_LtmNW1m" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Componentes de Sensores</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1pOF8-lpeJcR4N9ZIyFnyIgKKCLTcl_3N" alt="Sector Científico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-purple-700 uppercase">Sector Científico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Manufactura Fina</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTOR 3: MÉDICO -->
+    <section class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border">
+      <div class="flex items-center gap-3 border-b border-miesa-border pb-4 mb-6">
+        <div class="bg-miesa-lightBg text-miesa-navy p-3 rounded-lg text-xl">
+          <i class="fa-solid fa-notes-medical"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-miesa-navy uppercase tracking-wide">3. Sector Médico</h3>
+          <p class="text-xs text-slate-500">Componentes con acabados limpios en Inoxidables y polímeros ingenieriles.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1q_E4-rLJJj8QRD1DQILd951RgW3KHCj2" alt="Sector Médico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-emerald-700 uppercase">Sector Médico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Ensambles en material Inoxidable</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1kqB8r3BLnwW6A6xbi3d62irnB1eT8JbW" alt="Sector Médico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-emerald-700 uppercase">Sector Médico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Ensambles en Material Inoxidable</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1_NsZLaKeOkOYXbWywaxiyN9lkD0px2pr" alt="Sector Médico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-emerald-700 uppercase">Sector Médico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Maquinado en Material Inoxidable</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1EF1VghdbOjUiRecLet7aLMYc_fVb9iRH" alt="Sector Médico" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-emerald-700 uppercase">Sector Médico</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Componentes Especiales</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTOR 4: TRANSPORTE PÚBLICO -->
+    <section class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border">
+      <div class="flex items-center gap-3 border-b border-miesa-border pb-4 mb-6">
+        <div class="bg-miesa-lightBg text-miesa-navy p-3 rounded-lg text-xl">
+          <i class="fa-solid fa-bus"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-miesa-navy uppercase tracking-wide">4. Sector Transporte Público</h3>
+          <p class="text-xs text-slate-500">Refaccionamiento técnico, bujes, pernos y componentes de uso rudo para flotas.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/11QTsx7H3wimBuhNImAwueux4Fie8pEca" alt="Transporte Público" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-amber-700 uppercase">Transporte Público</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Soluciones en Maquinado</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1zEB-gcFQppNWY8yfbqXDdgohkaVh3YWK" alt="Transporte Público" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-amber-700 uppercase">Transporte Público</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Soluciones en Maquinado</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/10EgCQyVSXTvbDIhGNDY7xF21SIAc0MzF" alt="Transporte Público" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-amber-700 uppercase">Transporte Público</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Piezas de Soporte</h4>
+          </div>
+        </div>
+
+        <div class="bg-miesa-light rounded-lg border border-miesa-border overflow-hidden shadow-sm flex flex-col">
+          <div class="h-48 bg-slate-200 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/d/1yIJZRwBuf9SjPqxdwm2Ac3vO3WHFqJbl" alt="Transporte Público" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-2.5">
+            <span class="text-[9px] font-bold text-amber-700 uppercase">Transporte Público</span>
+            <h4 class="text-xs font-bold text-miesa-navy">Piezas de Suspensión</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LLAMADO A LA ACCIÓN -->
+  <section class="bg-miesa-navy text-white py-8 px-4 text-center border-t border-slate-700">
+    <div class="max-w-3xl mx-auto space-y-3">
+      <h3 class="text-base md:text-lg font-bold">¿Tienes un plano o muestra para cualquiera de estos sectores?</h3>
+      <p class="text-xs text-slate-300">Te asesoramos con la selección de material, estrategia de maquinado y tiempos de entrega.</p>
+      <a href="https://wa.me/522224335744?text=Hola,%20quisiera%20cotizar%20un%20proyecto%20de%20maquinado" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-5 py-2.5 rounded-lg shadow transition">
+        <i class="fa-brands fa-whatsapp text-sm mr-1"></i> Cotizar WhatsApp Ahora
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
