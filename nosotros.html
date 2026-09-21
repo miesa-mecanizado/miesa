@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIESA - Nosotros</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            miesa: {
+              navy: '#0d3159',      /* Azul corporativo MIESA */
+              steel: '#1e293b',
+              blue: '#2563eb',
+              lightBg: '#e2e8f0',   /* Fondo claro del logo */
+              light: '#f8fafc',
+              border: '#cbd5e1'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .logo-badge {
+      border: 3px solid #0d3159;
+      border-radius: 12px;
+      padding: 4px 12px;
+      background-color: #e2e8f0;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+<body class="bg-miesa-light text-slate-800 font-sans antialiased">
+
+  <!-- ENCABEZADO SUPERIOR -->
+  <header class="bg-miesa-navy text-white py-3 px-4 shadow-md sticky top-0 z-50 border-b border-slate-700">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-3">
+      <div class="flex items-center gap-3">
+        <div class="logo-badge shadow-inner">
+          <span class="text-xl md:text-2xl font-extrabold italic tracking-wider text-miesa-navy leading-none font-sans">MIESA</span>
+          <span class="text-[9px] font-semibold italic text-miesa-navy tracking-tight leading-tight">your machining partner</span>
+        </div>
+        <div class="hidden sm:block border-l border-slate-600 pl-3">
+          <h1 class="text-sm font-bold text-slate-100 uppercase tracking-wide">Maquinados Industriales Esféricos</h1>
+          <p class="text-[10px] text-slate-300">Ingeniería & Manufactura de Precisión</p>
+        </div>
+      </div>
+
+      <a href="https://wa.me/522224335744?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20MIESA" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold text-xs px-3.5 py-2 rounded shadow transition flex items-center gap-1.5">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Contactar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- BANNER TITULAR DE LA PÁGINA -->
+  <section class="bg-miesa-navy text-white py-10 px-4 text-center border-b border-miesa-steel">
+    <div class="max-w-3xl mx-auto space-y-2">
+      <span class="bg-blue-600/80 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Perfil Corporativo y Filosofía
+      </span>
+      <h2 class="text-2xl md:text-4xl font-extrabold text-white">
+        Acerca de MIESA
+      </h2>
+      <p class="text-slate-300 text-xs md:text-sm font-light leading-relaxed">
+        Evolución técnica respaldada por trayectoria industrial e integración de ingeniería mecatrónica.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN HISTORIAL Y EVOLUCIÓN -->
+  <section class="max-w-4xl mx-auto my-10 px-4">
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-miesa-border">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="bg-miesa-lightBg text-miesa-navy p-3 rounded-lg text-xl font-bold">
+          <i class="fa-solid fa-gears"></i>
+        </div>
+        <div>
+          <h3 class="text-lg md:text-xl font-bold text-miesa-navy">Historial y Perfil Técnico</h3>
+          <p class="text-xs text-slate-500">De la manufactura tradicional al control digital avanzado</p>
+        </div>
+      </div>
+      <p class="text-slate-700 text-xs md:text-sm leading-relaxed mb-4">
+        <strong>Maquinados Industriales Esféricos (MIESA)</strong> nació como una empresa familiar de manufactura técnica, consolidando décadas de experiencia directa en taller y procesos metalmecánicos.
+      </p>
+      <p class="text-slate-700 text-xs md:text-sm leading-relaxed">
+        Con la integración de la <strong>Dirección de Ingeniería Mecatrónica</strong>, evolucionamos hacia la manufactura avanzada. Hoy combinamos esa sólida trayectoria en maquinado convencional con el control CNC, la optimización mediante SolidWorks (CAD/CAM) y la programación especializada para garantizar la más alta precisión y repetibilidad en cada proyecto.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MISIÓN Y VISIÓN (GRID 2 COLUMNAS) -->
+  <section class="max-w-4xl mx-auto my-8 px-4 grid md:grid-cols-2 gap-6">
+    
+    <!-- Tarjeta Misión -->
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border flex flex-col justify-between">
+      <div>
+        <div class="text-miesa-navy text-2xl mb-3">
+          <i class="fa-solid fa-bullseye text-blue-600"></i>
+        </div>
+        <h4 class="text-base font-bold text-miesa-navy uppercase tracking-wider mb-2">Nuestra Misión</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          Proveer soluciones integrales de manufactura avanzada mediante ingeniería mecatrónica, garantizando la máxima precisión y repetibilidad en lotes de producción industrial. Nos comprometemos con la transparencia comercial y la excelencia técnica para asegurar la continuidad y optimización de la cadena de suministro de nuestros socios.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tarjeta Visión -->
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-miesa-border flex flex-col justify-between">
+      <div>
+        <div class="text-miesa-navy text-2xl mb-3">
+          <i class="fa-solid fa-eye text-blue-600"></i>
+        </div>
+        <h4 class="text-base font-bold text-miesa-navy uppercase tracking-wider mb-2">Nuestra Visión</h4>
+        <p class="text-slate-600 text-xs leading-relaxed">
+          Consolidarnos como el brazo de manufactura externa y maquilado líder en la región central del país, siendo reconocidos por nuestra integridad comercial y capacidad de respuesta en producción en serie para los sectores médico, tecnológico y de energía renovable.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- VALORES ÉTICOS Y TRANSPARENCIA COMERCIAL -->
+  <section class="max-w-4xl mx-auto my-10 px-4">
+    <div class="bg-miesa-navy text-white p-6 rounded-xl shadow-md border border-slate-700">
+      <h4 class="text-sm font-bold text-blue-300 uppercase tracking-widest mb-4 text-center">
+        <i class="fa-solid fa-shield-halved mr-2"></i> Nuestros Compromisos Comerciales
+      </h4>
+      <div class="grid md:grid-cols-3 gap-4 text-xs">
+        <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+          <strong class="text-white block mb-1 font-bold">1. Ética y Transparencia</strong>
+          <span class="text-slate-300">Cotizaciones claras sin costos ocultos y total honestidad sobre nuestras capacidades de tiempo y volumen.</span>
+        </div>
+        <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+          <strong class="text-white block mb-1 font-bold">2. Trazabilidad de Calidad</strong>
+          <span class="text-slate-300">Verificación dimensional estricta centésima a centésima para asegurar el ajuste perfecto con tus planos.</span>
+        </div>
+        <div class="bg-slate-800/80 p-4 rounded-lg border border-slate-700">
+          <strong class="text-white block mb-1 font-bold">3. Cumplimiento Puntual</strong>
+          <span class="text-slate-300">Respeto absoluto a los tiempos de entrega acordados para cuidar la continuidad de su línea de producción.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
